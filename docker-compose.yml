@@ -30,10 +30,10 @@ services:
       - GF_AUTH_ANONYMOUS_ORG_ROLE=Admin
       - GF_SMTP_ENABLED=true
       - GF_SMTP_HOST=smtp.gmail.com:465
-      - GF_SMTP_USER=dietmonitoring@gmail.com
-      - GF_SMTP_PASSWORD=diet1234
+      - GF_SMTP_USER=alertgrafanashubhi@gmail.com
+      - GF_SMTP_PASSWORD=alert1234
       - GF_SMTP_SKIP_VERIFY=true
-      - GF_SMTP_FROM_ADDRESS=dietmonitoring@gmail.com
+      - GF_SMTP_FROM_ADDRESS=alertgrafanashubhi@gmail.com
       - GF_SMTP_FROM_NAME=Grafana
     ports:
       - 3000:3000

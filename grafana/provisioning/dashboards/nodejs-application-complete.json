@@ -16,8 +16,7 @@
   "editable": true,
   "gnetId": 12230,
   "graphTooltip": 0,
-  "id": 2,
-  "iteration": 1617724626478,
+  "iteration": 1618331562790,
   "links": [],
   "panels": [
     {
@@ -26,14 +25,20 @@
         "conditions": [
           {
             "evaluator": {
-              "params": [41000000],
+              "params": [
+                18
+              ],
               "type": "gt"
             },
             "operator": {
               "type": "and"
             },
             "query": {
-              "params": ["A", "5m", "now"]
+              "params": [
+                "A",
+                "5m",
+                "now"
+              ]
             },
             "reducer": {
               "params": [],
@@ -70,7 +75,7 @@
         "y": 0
       },
       "hiddenSeries": false,
-      "id": 100,
+      "id": 98,
       "legend": {
         "avg": false,
         "current": false,
@@ -94,10 +99,9 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "process_resident_memory_bytes{app=\"example-nodejs-app\"}",
-          "instant": true,
+          "expr": "process_cpu_seconds_total",
           "interval": "",
-          "legendFormat": "",
+          "legendFormat": "{{app}}",
           "refId": "A"
         }
       ],
@@ -107,7 +111,7 @@
           "fill": true,
           "line": true,
           "op": "gt",
-          "value": 41000000
+          "value": 18
         }
       ],
       "timeFrom": null,
@@ -129,7 +133,8 @@
       },
       "yaxes": [
         {
-          "format": "short",
+          "$$hashKey": "object:1029",
+          "format": "s",
           "label": null,
           "logBase": 1,
           "max": null,
@@ -137,6 +142,7 @@
           "show": true
         },
         {
+          "$$hashKey": "object:1030",
           "format": "short",
           "label": null,
           "logBase": 1,
@@ -154,7 +160,11 @@
       "cacheTimeout": null,
       "colorBackground": true,
       "colorValue": false,
-      "colors": ["#299c46", "rgba(237, 129, 40, 0.89)", "#C4162A"],
+      "colors": [
+        "#299c46",
+        "rgba(237, 129, 40, 0.89)",
+        "#C4162A"
+      ],
       "datasource": "Prometheus",
       "fieldConfig": {
         "defaults": {
@@ -240,7 +250,11 @@
       "cacheTimeout": null,
       "colorBackground": false,
       "colorValue": false,
-      "colors": ["#299c46", "rgba(237, 129, 40, 0.89)", "#d44a3a"],
+      "colors": [
+        "#299c46",
+        "rgba(237, 129, 40, 0.89)",
+        "#d44a3a"
+      ],
       "datasource": "Prometheus",
       "fieldConfig": {
         "defaults": {
@@ -324,7 +338,11 @@
       "cacheTimeout": null,
       "colorBackground": false,
       "colorValue": false,
-      "colors": ["#299c46", "rgba(237, 129, 40, 0.89)", "#d44a3a"],
+      "colors": [
+        "#299c46",
+        "rgba(237, 129, 40, 0.89)",
+        "#d44a3a"
+      ],
       "datasource": "Prometheus",
       "fieldConfig": {
         "defaults": {
@@ -408,7 +426,11 @@
       "cacheTimeout": null,
       "colorBackground": true,
       "colorValue": false,
-      "colors": ["#299c46", "rgba(237, 129, 40, 0.89)", "#C4162A"],
+      "colors": [
+        "#299c46",
+        "rgba(237, 129, 40, 0.89)",
+        "#C4162A"
+      ],
       "datasource": "Prometheus",
       "fieldConfig": {
         "defaults": {
@@ -493,7 +515,11 @@
       "colorBackground": true,
       "colorPostfix": false,
       "colorValue": false,
-      "colors": ["#C4162A", "rgba(237, 129, 40, 0.89)", "#299c46"],
+      "colors": [
+        "#C4162A",
+        "rgba(237, 129, 40, 0.89)",
+        "#299c46"
+      ],
       "datasource": "Prometheus",
       "fieldConfig": {
         "defaults": {
@@ -579,7 +605,11 @@
       "cacheTimeout": null,
       "colorBackground": false,
       "colorValue": true,
-      "colors": ["#299c46", "rgba(237, 129, 40, 0.89)", "#C4162A"],
+      "colors": [
+        "#299c46",
+        "rgba(237, 129, 40, 0.89)",
+        "#C4162A"
+      ],
       "datasource": "Prometheus",
       "fieldConfig": {
         "defaults": {
@@ -663,7 +693,11 @@
       "cacheTimeout": null,
       "colorBackground": false,
       "colorValue": false,
-      "colors": ["#299c46", "rgba(237, 129, 40, 0.89)", "#d44a3a"],
+      "colors": [
+        "#299c46",
+        "rgba(237, 129, 40, 0.89)",
+        "#d44a3a"
+      ],
       "datasource": "Prometheus",
       "fieldConfig": {
         "defaults": {
@@ -843,6 +877,7 @@
       },
       "yaxes": [
         {
+          "$$hashKey": "object:1441",
           "format": "s",
           "label": null,
           "logBase": 1,
@@ -851,6 +886,7 @@
           "show": true
         },
         {
+          "$$hashKey": "object:1442",
           "format": "short",
           "label": null,
           "logBase": 1,
@@ -935,6 +971,7 @@
       },
       "yaxes": [
         {
+          "$$hashKey": "object:556",
           "format": "s",
           "label": null,
           "logBase": 1,
@@ -943,6 +980,7 @@
           "show": true
         },
         {
+          "$$hashKey": "object:557",
           "format": "short",
           "label": null,
           "logBase": 1,
@@ -2279,6 +2317,7 @@
       "targets": [
         {
           "expr": "sum(http_response_size_bytes_sum{instance=~\"$instance\"}) by (route)",
+          "interval": "",
           "legendFormat": "{{route}}",
           "refId": "A"
         }
@@ -2303,6 +2342,7 @@
       },
       "yaxes": [
         {
+          "$$hashKey": "object:1226",
           "format": "bytes",
           "label": null,
           "logBase": 2,
@@ -2311,6 +2351,7 @@
           "show": true
         },
         {
+          "$$hashKey": "object:1227",
           "format": "short",
           "label": null,
           "logBase": 1,
@@ -2922,7 +2963,11 @@
   "refresh": "10s",
   "schemaVersion": 26,
   "style": "dark",
-  "tags": ["node.js", "express", "prometheus"],
+  "tags": [
+    "node.js",
+    "express",
+    "prometheus"
+  ],
   "templating": {
     "list": [
       {
@@ -3153,7 +3198,7 @@
     ]
   },
   "time": {
-    "from": "now-1h",
+    "from": "now-15m",
     "to": "now"
   },
   "timepicker": {
@@ -3173,5 +3218,5 @@
   "timezone": "",
   "title": "Node JS Application Complete Dashboard",
   "uid": "3J_78b6Zz",
-  "version": 16
+  "version": 4
 }
