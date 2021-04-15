@@ -43,7 +43,7 @@ Open in your web browser the monitoring dashboards:
 
 There are two Application Level Monitoring dashboards for the Node.js app which can be found on
 
-- [Node JS Application Final Dashboard](http://localhost:3000/d/XzE4uHXMz/node-js-application-complete-dashboard-final?orgId=1&refresh=30s)
+- [Node JS Application Final Dashboard](http://localhost:3000/d/XzE5uHXMz/node-js-application-complete-dashboard-final?orgId=1&refresh=30s&from=1618494666387&to=1618496466387&var-instance=All&var-interval=1m&var-target=0.05&var-tolerated=0.1&var-restarts_interval=1d)
 
 - [CPU Utilization Dashboard](http://localhost:3000/d/rYdddlPWk/node-exporter-full?orgId=1&refresh=30s)
 
